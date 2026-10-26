@@ -1,0 +1,3 @@
+686a94cb60ea86095a862544fa575f407196a6a6f9b28e25f59e6ef2d84e10db  fabric-1.21.1/naturalrelationship-1.6.34-fabric-1.21.1.jar
+622fd2d37097a30dc48c43ac25a1a3efaa47a8ed6e0a74718fee88443c9bd511  fabric-26.3/naturalrelationship-1.6.34-fabric-26.3.jar
+eab7f7f441b5719ec67737653bed9bec95b4348f0d058ce0ee2527ef01ee88e4  neoforge-1.21.1/naturalrelationship-1.6.34-neoforge-1.21.1.jar
