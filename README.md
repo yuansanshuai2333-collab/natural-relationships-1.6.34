@@ -2,6 +2,13 @@
 
 自然关系 1.6.34。下面的文件分别用于不同的 Minecraft 版本和加载器；只选择与你的游戏环境对应的一份。不要同时安装多个自然关系 JAR。
 
+## 当前开发快照
+
+| Minecraft | 加载器 | 文件 | 状态 |
+| --- | --- | --- | --- |
+| 1.21.11 | Fabric | [当前 1.7.0-dev.8 开发包](naturalrelationship-1.7.0-dev.8+1.21.11.jar) | 根构建 1319 项测试、0 失败/错误/跳过，NoN 1.5.3-r1 主动菜单提交安全修复已通过静态与聚焦回归 |
+
+该文件是当前开发快照，版本元数据为 1.7.0-dev.8+1.21.11。它保留当前开发中的伙伴默认自由活动与手动切换逻辑，并包含 NoN 1.5.3-r1 主动菜单修复。马、驴、骡的真人交配结算、末影人内容包候选以及完整旧版 NoN 运行回归仍未在真实玩家场景中验收。视觉样本仍处于独立预览阶段，未切换为正式生产渲染模型。
 ## 下载
 
 | Minecraft | 加载器 | 文件 | 状态 |
@@ -40,4 +47,4 @@
 
 ## 校验
 
-全部五份JAR的SHA256见 [SHA256SUMS.txt](SHA256SUMS.txt)；三个兼容包原校验表 [compatibility/SHA256SUMS.txt](compatibility/SHA256SUMS.txt)继续保留。
+全部六份JAR的SHA256见 [SHA256SUMS.txt](SHA256SUMS.txt)；三个兼容包原校验表 [compatibility/SHA256SUMS.txt](compatibility/SHA256SUMS.txt)继续保留。
