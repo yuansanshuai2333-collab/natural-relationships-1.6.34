@@ -48,3 +48,8 @@
 ## 校验
 
 全部六份JAR的SHA256见 [SHA256SUMS.txt](SHA256SUMS.txt)；三个兼容包原校验表 [compatibility/SHA256SUMS.txt](compatibility/SHA256SUMS.txt)继续保留。
+
+
+## 更新说明
+
+- [2026-11-04 NoN 1.5.3-r1 交配好感修复更新](updates/2026-11-04-non153r1-mating-affinity-fix.md)
