@@ -2,6 +2,10 @@
 
 自然关系 1.6.34。下面的文件分别用于不同的 Minecraft 版本和加载器；只选择与你的游戏环境对应的一份。不要同时安装多个自然关系 JAR。
 
+## 推荐下载
+
+如果你使用 Minecraft 1.21.11 Fabric，请下载 [1.6.34 修复包](naturalrelationship-1.6.34+1.21.11.jar)。该文件现在就是 NoN 1.5.3-r1 好感修复构建，内部版本为 `1.6.34-non153r1fix.1+1.21.11`。仓库同时保留带 `non153r1fix` 文件名的同一份 JAR，便于校验。不要安装原始回退包。
+
 ## 当前开发快照
 
 | Minecraft | 加载器 | 文件 | 状态 |
@@ -13,7 +17,7 @@
 
 | Minecraft | 加载器 | 文件 | 状态 |
 | --- | --- | --- | --- |
-| 1.21.11 | Fabric | [NoN 1.5.3-r1 好感修复版](naturalrelationship-1.6.34-non153r1fix.1+1.21.11.jar) | 988项测试、R1及1.5.2实际结算回归通过 |
+| 1.21.11 | Fabric | [NoN 1.5.3-r1 好感修复版](naturalrelationship-1.6.34+1.21.11.jar) | 988项测试、R1及1.5.2实际结算回归通过 |
 | 1.21.1 | Fabric | [兼容测试包](compatibility/fabric-1.21.1/naturalrelationship-1.6.34-fabric-1.21.1.jar) | 完整构建、983项测试及生产加载通过 |
 | 1.21.1 | NeoForge | [兼容测试包](compatibility/neoforge-1.21.1/naturalrelationship-1.6.34-neoforge-1.21.1.jar) | 完整构建、986项测试及生产加载通过 |
 | 26.3 | Fabric | [兼容测试包](compatibility/fabric-26.3/naturalrelationship-1.6.34-fabric-26.3.jar) | 完整构建、983项测试及生产加载通过 |
@@ -26,14 +30,16 @@
 
 实测环境：Java21、Minecraft1.21.11、Fabric Loader0.19.5、Fabric API0.141.6+1.21.11、GeckoLib5.4.5；NoN分别使用1.5.3-r1+1.21.11和1.5.2+1.21.11，配已有默认内容包进行受控测试。
 
-- 完整构建和发布检查通过；988项测试无失败、无错误、无跳过，原981项测试全部保留。
+- 完整构建和发布检查通过；988项测试无失败、无错误、无跳过，原981项测试全部保留。2026-11-05 重新清理构建后的修复包 SHA256 为 `E1F3D00473839494121503C511E132DE2D6D56A3AD814C5A9F72550BF4E61FA6`。
 - 使用真实客户端连接独立服务端复现原包不结算。修复包在R1和1.5.2下各通过39项检查：自然完成、最终阶段推进、主动中断、重复停止、菜单选择及取消。
 - 受控场景中正常完成好感75→85，主动中断仍为75；完成次数与友情之证奖励只增加一次。数值来自原有配置及规则，本次未修改奖励规则。
 - R1和1.5.2客户端/服务端均正常保存并退出；无NoN时服务端启动、重载、保存和正常停止也通过。
 
 配置、已有物品、视觉资源、原1.21.11跨维度召回及原业务规则保留。本次只验收上述修复场景，完整NoN互动清单、画面、长时多人和所有旧存档仍未全部验收；请先备份存档。离线测试客户端记录了账号/Realms/密钥认证失败及测试设置超范围日志，已单独核对，不将其写成全日志无错误。
 
-[原版1.6.34回退包](naturalrelationship-1.6.34+1.21.11.jar)继续保留，内容未改；它不含这次NoN1.5.3-r1好感修复。
+[原始1.6.34回退包](naturalrelationship-1.6.34-original+1.21.11.jar)仅用于回归对照，它不含这次 NoN 1.5.3-r1 好感修复。普通下载链接已经切换为修复包，不能把回退包与修复包同时放进 `mods`。
+
+这次修复只覆盖自然之需自身的 NoN 动画完成路径。反馈中提到的第三方 “Prostitution Manual” 具体 JAR 不在当前验证环境，无法把它的自定义结束事件写成已兼容；若该模组绕过 NoN 的动画 API，仍需它的确切文件和服务器 `latest.log` 才能继续接入。
 
 ## 其余三个兼容包的对应环境与范围
 
@@ -47,9 +53,10 @@
 
 ## 校验
 
-全部六份JAR的SHA256见 [SHA256SUMS.txt](SHA256SUMS.txt)；三个兼容包原校验表 [compatibility/SHA256SUMS.txt](compatibility/SHA256SUMS.txt)继续保留。
+仓库内七份主 JAR 的 SHA256 见 [SHA256SUMS.txt](SHA256SUMS.txt)；三个兼容包原校验表 [compatibility/SHA256SUMS.txt](compatibility/SHA256SUMS.txt)继续保留。
 
 
 ## 更新说明
 
 - [2026-11-04 NoN 1.5.3-r1 交配好感修复更新](updates/2026-11-04-non153r1-mating-affinity-fix.md)
+- [2026-11-05 修复包切换为主下载并复核第三方反馈](updates/2026-11-05-r1-distribution-and-third-party-feedback.md)
